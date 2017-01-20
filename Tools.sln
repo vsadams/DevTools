@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Powershell", "Powershell", "{F9701D48-BD82-42C6-BBCC-AD4DD9E3BA5B}"
+	ProjectSection(SolutionItems) = preProject
+		Powershell\BuildAndDeployServerToQa.ps1 = Powershell\BuildAndDeployServerToQa.ps1
+		Powershell\GenHostFile.ps1 = Powershell\GenHostFile.ps1
+		Powershell\Merge Shelveset.ps1 = Powershell\Merge Shelveset.ps1
+		Powershell\New Cert.ps1 = Powershell\New Cert.ps1
+		Powershell\PowershellSizeSetter.ps1 = Powershell\PowershellSizeSetter.ps1
+		Powershell\SignScript.ps1 = Powershell\SignScript.ps1
+		Powershell\ZipUpApps.ps1 = Powershell\ZipUpApps.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
