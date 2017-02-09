@@ -319,15 +319,11 @@ Add-Type -TypeDefinition @"
 				{
 					$fileName = $fileName.Replace(".rdl","")
                     
-                    #Remove report first, SSRS does not always honor the "overwrite" parameter for some reason...
-                    $ssrsProxy.DeleteItem("$reportFolder/$fileName")
 					#Call Proxy to upload report
 					$warnings = $ssrsProxy.CreateReport($fileName,$reportFolder,$TRUE,$fileBytes,$null)
 				}
 				else
 				{
-                    #Remove report first, SSRS does not always honor the "overwrite" parameter for some reason...
-                    $ssrsProxy.DeleteItem("$reportFolder/$fileName")
 					#Call Proxy to upload image
 					$warnings = $ssrsProxy.CreateResource($fileName,$reportFolder,$TRUE,$fileBytes,"image/png",$null)   
 				}
