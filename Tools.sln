@@ -14,8 +14,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Powershell", "Powershell", 
 		Powershell\ZipUpApps.ps1 = Powershell\ZipUpApps.ps1
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StressTesting", "StressTesting", "{4E08B78B-A69B-4429-8D6F-0AD8772F93AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StressMeOut", "StressTesting\StressMeOut\StressMeOut.csproj", "{121BE1F6-4006-4BF5-9803-10AEBFC5943D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{121BE1F6-4006-4BF5-9803-10AEBFC5943D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{121BE1F6-4006-4BF5-9803-10AEBFC5943D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{121BE1F6-4006-4BF5-9803-10AEBFC5943D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{121BE1F6-4006-4BF5-9803-10AEBFC5943D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{121BE1F6-4006-4BF5-9803-10AEBFC5943D} = {4E08B78B-A69B-4429-8D6F-0AD8772F93AA}
 	EndGlobalSection
 EndGlobal
