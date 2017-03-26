@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title":  "JDK8",
+    "publisher": "Vince Adams",
+    "description": "Installs the Java development kit version 9 using the Chocolatey package manager",
+    "tags": [
+        "Windows",
+        "Java",
+        "Development"
+    ],
+    "iconUri": "https://chocolatey.org/content/packageimages/jdk8.8.0.121.svg",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./startChocolatey.ps1 -PackageList ', 'jdk8', '\"')]"
+    }
+}
