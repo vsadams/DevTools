@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title":  "WinRAR",
+    "publisher": "Vince Adams",
+    "description": "Installs WinRAR using the Chocolatey package manager",
+    "tags": [
+        "Windows",
+        "WinRAR",
+        "Zip"
+    ],
+    "iconUri": "https://chocolatey.org/content/packageimages/winrar.5.40.0.20161221.png",
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./startChocolatey.ps1 -PackageList ', 'winrar', '\"')]"
+    }
+}
